@@ -4,9 +4,10 @@
 
 body {
   height: 100vh;
-  background-image: url("/background.png");
+  background-image: url("/dadImage.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  backdrop-filter: blur(150px);
 }

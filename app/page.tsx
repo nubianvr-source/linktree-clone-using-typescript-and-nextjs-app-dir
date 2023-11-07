@@ -10,20 +10,20 @@ export default async function HomePage() {
 
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 pb-10">
+    <div className="flex items-center flex-col mx-auto w-full h-full justify-center pt-20 px-8 pb-10">
       <Image
         priority
         className="rounded-full"
         alt={data.name}
         src={data.avatar}
-        width={96}
-        height={96}
+        width={200}
+        height={200}
       />
-      <h1 className="font-bold mt-4 mb-8 text-xl text-white">{data.name}</h1>
+      <h1 className="font-bold mt-4 mb-8 text-xl text-black">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
-      <div className="flex items-center gap-4 mt-8 text-white">
+      <div className="flex items-center gap-4 mt-8 text-black">
         {data.socials.map((social) => (
           <a
             aria-label={`${social.title} link`}
