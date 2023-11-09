@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["source.unsplash.com", "www.kowri.app"],
+    domains: ["source.unsplash.com"],
   },
 };
 

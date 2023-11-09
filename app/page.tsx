@@ -19,7 +19,7 @@ export default async function HomePage() {
         width={200}
         height={200}
       />
-      <h1 className="font-bold mt-4 mb-8 text-xl text-black">{data.name}</h1>
+      <h1 className="font-Inter font-bold mt-4 mb-8 text-xl text-center text-black">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
@@ -40,6 +40,7 @@ export default async function HomePage() {
           </a>
         ))}
       </div>
+      <h1 className="font-Inter font-light mt-4 mb-8 text-xl text-center text-black">Thank you for supporting us.</h1>
     </div>
   );
 }
